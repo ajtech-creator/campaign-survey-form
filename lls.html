@@ -26,7 +26,7 @@
       <div class="col-md-6 mb-4">
         <div class="card shadow-lg">
           <div class="card-body">
-            <h3 class="card-title mb-3 ">Loft Insulation</h3>
+            <h3 class="card-title mb-3 ">Later Life Services</h3>
             <form>
               <div class="mb-3">
     <div class="form-floating">
@@ -35,7 +35,7 @@
         <option value="1">Own the Property</option>
         <option value="2" style="color: red;">Rented Property</option>
       </select>
-      <label for="floatingSelectGrid">Q1 Own or Rent</label>
+      <label for="floatingSelectGrid">Q1 Hi, it's Alex. Have you heard about the new rules? <strong>(Either YES or NO Proceed to Q2)</strong></label>
     </div>
   </div>
 
@@ -43,83 +43,67 @@
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid">
       <option selected>Select</option>
-        <option value="1">45-59</option>
-        <option value="2">60-79</option>
-        <option value="3" style="color: red;">80 and over</option>
+        <option value="1" style="color: red;">YES</option>
+        <option value="2" >NO</option>
       </select>
-      <label for="floatingSelectGrid">Q2 Age Brackets</label>
+      <label for="floatingSelectGrid">Q2 If you ever need care in the future, do you have anything to protect your home?<strong>(If "No" Proceed to Q3)</strong></label>
     </div>
   </div>
 
-                  <div class="mb-1">
+                  <div class="mb-3">
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid">
         <option selected>Select</option>
-        <option value="1">House</option>
-        <option value="2">Bungalow</option>
-        <option value="3">Terraced</option>
-         <option value="4">End of Terraced</option>
-          <option value="5">Semi-Detached</option>
-           <option value="6">Detached</option>
-            <option value="7" style="color: red;">Flat,Maisonette,ParkHome</option>
+        <option value="1">YES</option>
+        <option value="2" style="color: red;">NO</option>
       </select>
-      <label for="floatingSelectGrid">Q3 Property Type</label>
+      <label for="floatingSelectGrid">Q3 Every homeowner gets a free consultation to protect their home and estate. OK?</label>
     </div>
   </div>
 
-                  <div class="mb-1">
+                  <div class="mb-3">
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid">
         <option selected>Select</option>
-        <option value="1" style="color: red;">Yes or No Loft</option>
-        <option value="2">No</option>
+        <option value="1">YES</option>
+        <option value="2" style="color: red;">NO</option>
       </select>
-      <label for="floatingSelectGrid">Q4 Converted or Not</label>
+      <label for="floatingSelectGrid">Q4 Could I just confirm you are the <strong>Homeowner</strong> there at the property, is that correct?</label>
     </div>
   </div>
 
-                  <div class="mb-1">
+                  <div class="mb-3">
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid">
         <option selected>Select</option>
-        <option value="1" style="color: red;">last 12 months</option>
-        <option value="2">5 years</option>
-        <option value="3">10 years</option>
-        <option value="4">More than 10 years</option>
-        <option value="5">Not Sure</option>
-        <option value="6">I don't have insulation</option>
+        <option value="1">YES</option>
+        <option value="2" style="color: red;">NO</option>
       </select>
-      <label for="floatingSelectGrid">Q5 Loft Insulation was Installed</label>
+      <label for="floatingSelectGrid">Q5 And are you between the age of <strong>55 and 79?</strong></label>
     </div>
   </div>
 
-                  <div class="mb-1">
+                  <div class="mb-3">
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid">
         <option selected>Select</option>
-        <option value="1">Spray Foam</option>
-        <option value="2">Kingspan</option>
-        <option value="3">Fiberglass</option>
-        <option value="4">Rock Wool</option>
-        <option value="5">Mineral Wool</option>
-        <option value="6">Not Sure</option>
+        <option value="1">YES</option>
+        <option value="2" style="color: red;">NO</option>
       </select>
-      <label for="floatingSelectGrid">Q6 What Type of Insulation</label>
+      <label for="floatingSelectGrid">Q6 And can I just confirm you have an <strong>Active Email Address</strong> Yes or No?   </label>
     </div>
   </div>
 
-                  <div class="mb-1">
-    <div class="form-floating">
-      <select class="form-select" id="floatingSelectGrid">
-        <option selected>Select</option>
-        <option value="1">Employed</option>
-        <option value="2">Self-employed</option>
-        <option value="3" style="color: red;">Unemployed</option>
-        <option value="4">Retired</option>
-      </select>
-      <label for="floatingSelectGrid">Q7 Employment Status</label>
+                  <div class=" color-box mb-3">
+  <label for="favoriteColor" class="form-label d-flex justify-content-center" style="text-indent: 16px; color: #fff; background: #242424; font-family: Georgia, 'Times New Roman', Times, serif;">Q7 What is your favorite color?</label>
+  <div class="d-flex align-items-center gap-2">
+    <input type="text" class="form-control" id="favoriteColor" placeholder="Type a Color...">
+    <div id="colorBox" 
+         style="width: 60px; height: 38px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center;">
+      NaN
     </div>
   </div>
+</div>
 
   <div class="form-floating">
   <textarea class="form-control" placeholder="Notes" id="floatingTextarea"></textarea>
@@ -132,6 +116,27 @@
       </div>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+  const colorInput = document.getElementById('favoriteColor');
+  const colorBox = document.getElementById('colorBox');
+
+  function isValidColor(value) {
+    const s = new Option().style;
+    s.color = value;
+    return s.color !== '';
+  }
+
+  colorInput.addEventListener('input', () => {
+    const colorValue = colorInput.value.trim();
+    if (colorValue && isValidColor(colorValue)) {
+      colorBox.style.background = colorValue;
+      colorBox.textContent = '';
+    } else {
+      colorBox.style.background = 'transparent';
+      colorBox.textContent = 'NAN';
+    }
+  });
+</script>
   </body>
 </html>
 </body>

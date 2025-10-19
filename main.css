@@ -1,0 +1,55 @@
+        body{
+            background-color: #adb3ff;
+        }
+
+        nav ul {
+        list-style: none;
+        display: flex;
+        gap: 100px;        
+        }
+
+        nav ul li a {
+        position: relative;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: larger;
+        text-decoration: none;
+        color: #ffff;
+        font-weight: 500;
+        }
+
+       a::after{
+            content: "";
+            position: absolute;
+            background: #FFCFEF;
+            width: 0;
+            height: 5px;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        a:hover::after {
+        width: 100%;
+        }
+
+        a:active{
+            color: #F93827;
+        }
+
+        .logo img {
+        display: block;
+        }
+        .qualifying{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            height: 100vh;
+        }
+        .card-title{
+            text-align: center;
+            font-family: 'Tangerine', serif;
+            font-size: 5em;
+            color: #000;
+            padding: 10px;
+        }
