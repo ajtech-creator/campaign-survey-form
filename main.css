@@ -5,6 +5,7 @@
         nav ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         gap: 100px;        
         }
 
@@ -52,4 +53,5 @@
             font-size: 5em;
             color: #000;
             padding: 10px;
+
         }
