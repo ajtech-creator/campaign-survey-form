@@ -10,20 +10,65 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   </head>
   <body>
-  <nav class="d-flex justify-content-between align-items-center border p-3 position-sticky" style="background-color:#4E56C0; top: 0; z-index: 2;">
-  <div class="logo">
-    <img src="./images/logo.jpg" alt="Logo" height="60" width="70">
-  </div>
-  <ul class="d-flex m-0 p-0 mx-4">
-    <li><a href="index.html">LOFT</a></li>
-    <li><a href="wd.html">W&D</a></li>
-    <li><a href="lls.html">LLS</a></li>
-    <li><a href="rmvl.html">REMOVAL</a></li>
-  </ul>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Toggler for offcanvas on small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav links on the right for larger screens -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">LOFT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wd.html">W&D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lls.html">LLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rmvl.html">REMOVAL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas for smaller screens -->
+    <div class="offcanvas offcanvas-end offcanvas-glass" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff;">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">LOFT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wd.html">W&D</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lls.html">LLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rmvl.html">REMOVAL</a>
+                </li>
+            </ul>
+        </div>
+    </div>
    <!-- Loft Insulation Form -->
     <div class="qualifying">
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-4 mt-5">
         <div class="card shadow-lg">
           <div class="card-body">
             <h3 class="card-title mb-3 ">Windows & Doors</h3>
@@ -147,5 +192,4 @@
   </body>
 </html>
 </body>
-
 </html>
