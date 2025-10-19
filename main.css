@@ -3,9 +3,9 @@
         }
 
         nav ul {
+        flex-wrap: wrap;
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
         gap: 100px;        
         }
 
@@ -55,3 +55,4 @@
             padding: 10px;
 
         }
+
